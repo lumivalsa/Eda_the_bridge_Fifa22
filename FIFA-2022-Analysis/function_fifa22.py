@@ -1,4 +1,4 @@
-# importar librerías
+ # importar librerías
 from doctest import DocFileSuite
 from tabnanny import check
 from turtle import color, width
@@ -60,7 +60,9 @@ def datos(df):
     hipo=pd.DataFrame(df.query(('Potential>75') and ('Overall>71')))
     gru= hipo.groupby('Nationality')['ID'].count().head(30)
     st.bar_chart(gru)
-    st.text("")
+    img3 = Image.open('pai_jug.jpg')
+    st.image(img3,use_column_width='pai_jug',width= 500)
+    st.text(te.Resul1)
     st.subheader("Hipotesis 2:")
     st.text(te.Hipo2)
     Hipo2=df['Nationality'].value_counts().head(80)
@@ -80,7 +82,7 @@ def Jugadores(df,df2):
     total_salarios= df.groupby('Nationality')['Wage'].max()
     st.bar_chart(total_salarios)
 
-def Otros_cuadros():
+def Otros_cuadros(df):
     fig, ax = plt.subplots()
     plt.figure(figsize=(20,10))
     st.write(fig)
@@ -93,7 +95,8 @@ def Otros_cuadros():
                     'ShortPassing', 'ShotPower','SlidingTackle',
                     'SprintSpeed', 'Stamina', 'StandingTackle', 'Strength', 'Vision',
                     'Volleys']].corr(), annot=True, cmap='Blues')
-
+    
+    sns.heatmap(df.corr(), ax=ax)
 
 
 

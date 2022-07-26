@@ -23,3 +23,13 @@ Hipo3= """
 Hipo4= """
     ¿Si Inglaterra es el país con más jugadores en el mundo, es tambien el país con más ingresos si se suman todos sus jugadores? 
 """
+
+Resul1="""
+    El resultado de la evaluación nos determina que los paises con mejores jugadores a nivel mundial proviene de Brasil en primer lugar, seguido de España y Argentina en tercer lugar.  
+
+"""
+
+Resul2="""
+    El país con más jugadores a nivel global es Inglaterra, seguido de España, Alemania, Francia y Argentina en el orden respectivo, quedando en 6to lugar Brasil
+
+"""

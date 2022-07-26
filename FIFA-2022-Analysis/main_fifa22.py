@@ -28,4 +28,4 @@ elif menu == 'Datos':
 elif menu=='Jugadores': 
     ft.Jugadores(df,df2)
 else:
-    ft.Otros_cuadros()
+    ft.Otros_cuadros(df)
